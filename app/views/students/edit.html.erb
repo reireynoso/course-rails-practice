@@ -1,2 +1,7 @@
-<h1>Students#edit</h1>
-<p>Find me in app/views/students/edit.html.erb</p>
+<h1>Edit <%=@student.name%></h1>
+
+<%= form_for @student do |f|%>
+    <%= f.text_field :name %> 
+    <%= f.number_field :age %>
+    <%= f.submit %>
+<%end%>

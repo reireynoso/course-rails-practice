@@ -1,2 +1,11 @@
-<h1>Students#new</h1>
-<p>Find me in app/views/students/new.html.erb</p>
+<h1>Students New</h1>
+
+<%= form_for @student do |f| %>
+  <%= f.label 'Name' %><br>
+  <%= f.text_field :name %><br>
+ 
+  <%= f.label 'Age' %><br>
+  <%= f.number_field :age %><br>
+ 
+  <%= f.submit "Create Student" %>
+<% end %>
